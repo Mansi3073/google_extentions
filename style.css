@@ -1,0 +1,263 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.widget-container {
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #dddddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+}
+
+h2 {
+    margin-top: 0;
+    color: #333;
+}
+
+/* Poll Widget */
+#poll-form {
+    margin-bottom: 20px;
+}
+
+#poll-results {
+    display: none;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+#poll-results div {
+    margin-bottom: 5px;
+}
+
+
+#book-title {
+    font-weight: bold;
+}
+
+#book-quote {
+    font-style: italic;
+    margin-top: 10px;
+}
+
+#new-quote {
+    margin-top: 10px;
+    padding: 10px 15px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#new-quote:hover {
+    background-color: #0056b3;
+}
+
+#issue-form {
+    margin-bottom: 20px;
+}
+
+#issue-response {
+    display: none;
+    font-weight: bold;
+    color: green;
+}
+
+
+#dgc-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#dgc-list li {
+    padding: 10px;
+    margin-bottom: 5px;
+    border: 1px solid blueviolet;
+    border-radius: 4px;
+    background-color: yellowgreen;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#dgc-list li.completed {
+    text-decoration: line-through;
+    background-color: #e0ffe0;
+}
+
+#dgc-list button {
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#dgc-list button:hover {
+    background-color: #c82333;
+}
+
+/* Steps Tracker Widget */
+#steps-form {
+    margin-bottom: 20px;
+}
+
+#total-steps {
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+#add-steps {
+    margin-top: 10px;
+    padding: 10px 15px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#add-steps:hover {
+    background-color: #0056b3;
+}
+
+/* Opportunity Board Widget */
+#opportunity-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#opportunity-list li {
+    padding: 10px;
+    margin-bottom: 5px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#opportunity-list button {
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#opportunity-list button:hover {
+    background-color: #c82333;
+}
+
+/* Leaderboard Widget */
+#leaderboard-widget {
+    margin-bottom: 20px;
+}
+
+#leaderboard-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#leaderboard-list li {
+    padding: 10px;
+    margin-bottom: 5px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* TIL (Today I Learned) Widget */
+#til-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#til-list li {
+    padding: 10px;
+    margin-bottom: 5px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#til-list button {
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#til-list button:hover {
+    background-color: #c82333;
+}
+
+/* Google Meet Widget */
+#meet-link {
+    width: calc(100% - 100px);
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+#join-meet {
+    padding: 10px 15px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+#join-meet:hover {
+    background-color: #0056b3;
+}
+
+/* Google Keep Widget */
+#open-keep {
+    padding: 10px 15px;
+    border: none;
+    background-color: #fbbc05;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#open-keep:hover {
+    background-color: #e8a804;
+}
+
+/* ChatGPT Widget */
+#open-chatgpt {
+    padding: 10px 15px;
+    border: none;
+    background-color: #00aaff;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#open-chatgpt:hover {
+    background-color: #0077cc;
+}

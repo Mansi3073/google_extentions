@@ -1,0 +1,19 @@
+{
+    "manifest_version": 3,
+    "name": "My Comprehensive Extension",
+    "version": "1.0",
+    "description": "A Chrome extension with various widgets.",
+    "permissions": [
+      "activeTab",
+      "storage"
+    ],
+    "action": {
+      "default_popup": "popup.html",
+      "default_icon": {
+        "128": "icon128.png"
+      }
+    }
+  }
+
+  
+  

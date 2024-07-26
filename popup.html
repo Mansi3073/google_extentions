@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html>
+  
+<head>
+  <title>My Comprehensive Extension</title>
+  <link rel="stylesheet" href="path/to/style.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 10px;
+    }
+    .widget-container {
+      margin-top: 20px;
+    }
+    .announcement {
+      width: 100%;
+      overflow: hidden;
+      white-space: nowrap;
+      box-sizing: border-box;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>My Extension</h1>
+  
+  <div class="widget-container">
+    <h2>Google Slides</h2>
+    <iframe src="https://docs.google.com/presentation/d/1rlka1h9rHuBfsio5s_UqRl73ZLsBJlj7cRKbppX2Lh4/edit#slide=id.p1" width="400" height="300" frameborder="0" allowfullscreen="true"></iframe>
+  </div>
+
+  <div class="widget-container">
+    <h2>Google Spreadsheet</h2>
+    <iframe src="https://docs.google.com/spreadsheets/d/1crr0nxl2eNT7_jOpqrrttLPW8ljqzID4TEpdSRxu4ZI/edit?gid=0#gid=0" width="400" height="300" frameborder="0" allowfullscreen="true"></iframe>
+  </div>
+
+  <div class="widget-container">
+    <h2>Google Form</h2>
+    <iframe src="https://docs.google.com/forms/d/1iCjnL2OY_AdFSChkQIhnFHu7Cdsy4L3nC6ceSEi2NYY/closedform" width="400" height="300" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+  </div>
+
+  <div class="widget-container">
+    <h2>Poll</h2>
+    <div id="poll-widget">
+      <p>What is your favorite programming language?</p>
+      <form id="poll-form">
+        <input type="radio" id="python" name="language" value="Python">
+        <label for="python">Python</label><br>
+        <input type="radio" id="javascript" name="language" value="JavaScript">
+        <label for="javascript">JavaScript</label><br>
+        <input type="radio" id="java" name="language" value="Java">
+        <label for="java">Java</label><br>
+        <input type="radio" id="csharp" name="language" value="C#">
+        <label for="csharp">C#</label><br>
+        <button type="button" id="submit-poll">Submit</button>
+      </form>
+      <div id="poll-results" style="display: none;">
+        <h3>Poll Results</h3>
+        <p id="result-python">Python: 0</p>
+        <p id="result-javascript">JavaScript: 0</p>
+        <p id="result-java">Java: 0</p>
+        <p id="result-csharp">C#: 0</p>
+      </div>
+    </div>
+  </div>
+  
+
+  <div class="widget-container">
+    <div class="widget-container">
+      <h2>Book + Quote</h2>
+      <div id="book-quote-widget">
+        <p><strong>Book:</strong> <span id="book-title">To Kill a Mockingbird</span></p>
+        <p><strong>Quote:</strong> <span id="book-quote">"The one thing that doesn't abide by majority rule is a person's conscience."</span></p>
+        <button type="button" id="new-quote">New Quote</button>
+      </div>
+    </div>
+    
+  </div>
+
+  <div class="widget-container">
+    <div class="widget-container">
+      <h2>Issue Tracker</h2>
+      <div id="issue-tracker-widget">
+        <form id="issue-form">
+          <label for="name">Name:</label><br>
+          <input type="text" id="name" name="name"><br>
+          <label for="issue">Issue:</label><br>
+          <textarea id="issue" name="issue"></textarea><br>
+          <button type="button" id="submit-issue">Submit Issue</button>
+        </form>
+        <div id="issue-response" style="display: none;">
+          <p>Issue submitted successfully!</p>
+        </div>
+      </div>
+    </div>
+    
+  </div>
+
+  <div class="widget-container">
+    <div class="widget-container">
+      <h2>Daily Growth Checklist</h2>
+      <div id="dgc-widget">
+        <form id="dgc-form">
+          <label for="dgc-task">New Task:</label><br>
+          <input type="text" id="dgc-task" name="dgc-task"><br>
+          <button type="button" id="add-task">Add Task</button>
+        </form>
+        <ul id="dgc-list"></ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="widget-container">
+    <h2>Announcements</h2>
+    <marquee class="announcement">This is a sample announcement text.</marquee>
+  </div>
+
+  <div class="widget-container">
+    <div class="widget-container">
+      <h2>Steps/Health Tracker</h2>
+      <div id="steps-tracker-widget">
+        <form id="steps-form">
+          <label for="steps-input">Enter Steps:</label><br>
+          <input type="number" id="steps-input" name="steps-input"><br>
+          <button type="button" id="add-steps">Add Steps</button>
+        </form>
+        <p>Total Steps Today: <span id="total-steps">0</span></p>
+      </div>
+    </div>
+    
+  </div>
+
+  <div class="widget-container">
+    <div class="widget-container">
+      <h2>Opportunity Board</h2>
+      <div id="opportunity-board-widget">
+        <form id="opportunity-form">
+          <label for="opportunity-input">New Opportunity:</label><br>
+          <input type="text" id="opportunity-input" name="opportunity-input"><br>
+          <button type="button" id="add-opportunity">Add Opportunity</button>
+        </form>
+        <ul id="opportunity-list"></ul>
+      </div>
+    </div>
+    
+  </div>
+
+  <div class="widget-container">
+    <h2>Generic Leaderboard</h2>
+    <div class="widget-container">
+      <div id="leaderboard-widget">
+        <ul id="leaderboard-list">
+          <li>Most Steps Walked: <span id="most-steps">0</span></li>
+          <li>Most Pages Read: <span id="most-pages">0</span></li>
+          <li>Most Pomodoro Timers Clocked: <span id="most-pomodoros">0</span></li>
+        </ul>
+      </div>
+    </div>    
+  </div>
+
+  <div class="widget-container">
+    <div class="widget-container">
+      <h2>Today I Learned (TIL) Corner</h2>
+      <div id="til-corner-widget">
+        <form id="til-form">
+          <label for="til-content">New TIL Entry:</label><br>
+          <textarea id="til-content" name="til-content" rows="4" cols="50"></textarea><br>
+          <button type="button" id="add-til">Add TIL Entry</button>
+        </form>
+        <ul id="til-list"></ul>
+      </div>
+    </div>
+    
+  </div>
+
+  <div class="widget-container">
+    <h2>Google Calendar Day View</h2>
+    <iframe src="https://calendar.google.com/calendar/embed?src=YOUR_CALENDAR_ID&ctz=YOUR_TIME_ZONE" style="border: 0" width="400" height="300" frameborder="0" scrolling="no"></iframe>
+  </div>
+
+  <div class="widget-container">
+    <div class="widget-container">
+      <h2>Google Meet</h2>
+      <div id="google-meet-widget">
+        <label for="meet-link">Enter Google Meet Link:</label><br>
+        <input type="text" id="meet-link" name="meet-link" placeholder="Enter Google Meet link here"><br>
+        <button type="button" id="join-meet">Join Meet</button>
+      </div>
+    </div>
+    
+  </div>
+
+  <div class="widget-container">
+    <div class="widget-container">
+      <h2>Google Keep</h2>
+      <div id="google-keep-widget">
+        <button type="button" id="open-keep">Open Google Keep</button>
+      </div>
+    </div>
+    
+  </div>
+
+  <div class="widget-container">
+    <div class="widget-container">
+      <h2>ChatGPT</h2>
+      <div id="chatgpt-widget">
+        <button type="button" id="open-chatgpt">Open ChatGPT</button>
+        <iframe id="chatgpt-frame" src="https://chat.openai.com/" width="300" height="400" style="border:none;"></iframe> -->
+      </div>
+    </div>
+    
+  </div>
+
+  <div class="widget-container">
+    <h2>Specific Notion Page</h2>
+    <iframe src="https://www.netflix.com/in/" width="400" height="300" frameborder="0"></iframe>
+  </div>
+
+  <div class="widget-container">
+    <h2>Pomodoro Timer</h2>
+    <div id="pomodoro-timer-widget">
+      <p id="timer-display">25:00</p>
+      <button type="button" id="start-timer">Start</button>
+      <button type="button" id="stop-timer">Stop</button>
+      <button type="button" id="reset-timer">Reset</button>
+      <p id="timer-status">Status: Idle</p>
+    </div>
+  </div>
+
+
+  <script src="popup.js"></script>
+</body>
+</html>
